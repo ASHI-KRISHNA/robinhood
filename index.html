@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #logo a img {
+            height: 1.8rem;
+            margin-left: 1rem;
+        }
+
+        .nav-bar {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0%;
+            padding: 0%;
+            border-bottom: 0.1rem solid white;
+            height: 4rem;
+        }
+
+        #nav-options ul {
+            display: flex;
+            list-style: none;
+            gap: 1.2rem;
+        }
+
+        #nav-options ul li {
+            font-weight: medium;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #nav-options ul li a:hover {
+            color: #ccff00;
+        }
+
+        #select {
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 9rem;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        #select:hover {
+            color: #ccff00;
+        }
+
+        #language-options {
+            width: 3rem;
+            background-color: black;
+            color: white;
+            border: none;
+            font-weight: normal;
+            font-size: 1rem;
+        }
+
+        #language-options:hover {
+            color: #ccff00;
+        }
+
+        #login {
+            width: 8rem;
+            border: 0.1rem solid #ccff00;
+            border-radius: 2rem;
+            background-color: black;
+            color: white;
+            height: 3rem;
+        }
+
+        #login:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
+
+        #signup {
+            width: 8rem;
+            border: 0.1rem solid #ccff00;
+            border-radius: 2rem;
+            background-color: #ccff00;
+            color: rgb(0, 0, 0);
+            height: 3rem;
+        }
+
+        #signup:hover {
+            background-color: rgba(204, 255, 0, 0.8);
+            cursor: pointer;
+        }
+
+        .material-symbols-outlined {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 960px) {
+            #nav-options {
+                display: none;
+            }
+
+            #select {
+                display: none;
+            }
+
+            .material-symbols-outlined {
+                display: block;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+            #login {
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width: 650px) {
+            #language {
+                display: none;
+            }
+
+            #signup {
+                height: 2rem;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div id="logo"><a href="https://robinhood.com/us/en/"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a9UU-Wxq93VYGxJoDzXbBiDRWbL-rNhL5Q&s"></a>
+        </div>
+        <div id="drop-down">
+            <select id="select" placeholder="What We Offer">
+                <option>What We Offer</option>
+                <option value="https://robinhood.com/us/en/">Invest</option>
+                <option value="https://robinhood.com/us/en/">Crypto</option>
+                <option value="https://robinhood.com/us/en/">Retirement</option>
+                <option value="https://robinhood.com/us/en/">Options</option>
+                <option value="https://robinhood.com/us/en/">Futures</option>
+                <option value="https://robinhood.com/us/en/">Trading</option>
+                <option value="https://robinhood.com/us/en/">Banking</option>
+                <option value="https://robinhood.com/us/en/">Credit Card</option>
+                <option value="https://robinhood.com/us/en/">Social</option>
+                <option value="https://robinhood.com/us/en/">Ventures</option>
+            </select>
+        </div>
+        <div id="nav-options">
+            <ul>
+                <li><a href="https://robinhood.com/us/en/">Support</a></li>
+                <li><a href="https://robinhood.com/us/en/">Learn</a></li>
+                <li><a href="https://robinhood.com/us/en/">Legend</a></li>
+                <li><a href="https://robinhood.com/us/en/">Gold</a></li>
+                <li><a href="https://robinhood.com/us/en/">Strategies</a></li>
+            </ul>
+        </div>
+        <div id="language">
+            <select id="language-options">
+                <option value="https://robinhood.com/us/en/">US</option>
+                <option value="https://robinhood.com/us/en/">EU</option>
+            </select>
+        </div>
+        <div id="login-signup">
+            <button id="login">Log In</button>
+            <button id="signup">Sign Up</button>
+        </div>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </div>
+</body>
+
+</html>
