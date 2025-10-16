@@ -1,0 +1,221 @@
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* nav bar style */
+        #logo a img {
+            height: 1.8rem;
+            margin-left: 1rem;
+        }
+
+        .nav-bar {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0%;
+            padding: 0%;
+            border-bottom: 0.1rem solid white;
+            height: 4rem;
+        }
+
+        #nav-options ul {
+            display: flex;
+            list-style: none;
+            gap: 1.2rem;
+        }
+
+        #nav-options ul li {
+            font-weight: medium;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #nav-options ul li a:hover {
+            color: #ccff00;
+        }
+
+        #select {
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 9rem;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        #select:hover {
+            color: #ccff00;
+        }
+
+        #language-options {
+            width: 3rem;
+            background-color: black;
+            color: white;
+            border: none;
+            font-weight: normal;
+            font-size: 1rem;
+        }
+
+        #language-options:hover {
+            color: #ccff00;
+        }
+
+        #login {
+            width: 8rem;
+            border: 0.1rem solid #ccff00;
+            border-radius: 2rem;
+            background-color: black;
+            color: white;
+            height: 3rem;
+        }
+
+        #login:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
+
+        #signup {
+            width: 8rem;
+            border: 0.1rem solid #ccff00;
+            border-radius: 2rem;
+            background-color: #ccff00;
+            color: rgb(0, 0, 0);
+            height: 3rem;
+        }
+
+        #signup:hover {
+            background-color: rgba(204, 255, 0, 0.8);
+            cursor: pointer;
+        }
+
+        .material-symbols-outlined {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 960px) {
+            #nav-options {
+                display: none;
+            }
+
+            #select {
+                display: none;
+            }
+
+            .material-symbols-outlined {
+                display: block;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+            #login {
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width: 650px) {
+            #language {
+                display: none;
+            }
+
+            #signup {
+                height: 2rem;
+
+            }
+
+        }
+
+        /* first page */
+        
+
+
+        #fdate {
+            font-size: 1.3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            color: rgba(255, 255, 255, 0.3);
+            padding-left: 9rem;
+            padding-top: 4rem;
+        }
+
+        #fmainheading {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            color: #b8a36a;
+            font-size: 5rem;
+            padding-left: 9rem;
+        }
+
+        #fdetails {
+            font-size: 0.9rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding-left: 9rem;
+        }
+
+        #tclink {
+            text-decoration: none;
+            font-size: 0.7rem;
+            padding-left: 9rem;
+        }
+
+        #GoGold {
+            width: 8rem;
+            border-radius: 2rem;
+            color: rgb(0, 0, 0);
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: normal;
+            margin-left: 9rem;
+            margin-top: 1rem;
+        }
+
+        #fbg {
+            position: absolute;
+            top:0%;
+            right: 0%;
+            height: 100%;
+            width: 50%;
+            object-fit: cover;
+            z-index: -1;
+
+        }
+        @media screen and (max-width: 650px){
+            #fbg{
+                width: 100%;
+            }
+            #fmainheading{
+                font-size: 3rem;
+                padding-left: 2rem;
+                text-align: center;
+            }
+            #fdate{
+                padding-left: 2rem;
+                text-align: center;
+            }
+            #fdetails{
+                padding-left: 2rem;
+                text-align: center;
+            }
+            #tclink{
+                padding-left: 2rem;
+                margin-left: 25%;
+            }
+            #GoGold{
+                margin-left: 2rem;
+                margin-left: 40%;
+            }
+        }

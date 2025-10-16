@@ -9,149 +9,13 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-    <style>
-        body {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            margin: 0%;
-            padding: 0%;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: normal;
-            font-size: 1rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        #logo a img {
-            height: 1.8rem;
-            margin-left: 1rem;
-        }
-
-        .nav-bar {
-            background-color: black;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0%;
-            padding: 0%;
-            border-bottom: 0.1rem solid white;
-            height: 4rem;
-        }
-
-        #nav-options ul {
-            display: flex;
-            list-style: none;
-            gap: 1.2rem;
-        }
-
-        #nav-options ul li {
-            font-weight: medium;
-            font-size: 1rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        #nav-options ul li a:hover {
-            color: #ccff00;
-        }
-
-        #select {
-            font-size: 1rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            width: 9rem;
-            background-color: black;
-            color: white;
-            border: none;
-        }
-
-        #select:hover {
-            color: #ccff00;
-        }
-
-        #language-options {
-            width: 3rem;
-            background-color: black;
-            color: white;
-            border: none;
-            font-weight: normal;
-            font-size: 1rem;
-        }
-
-        #language-options:hover {
-            color: #ccff00;
-        }
-
-        #login {
-            width: 8rem;
-            border: 0.1rem solid #ccff00;
-            border-radius: 2rem;
-            background-color: black;
-            color: white;
-            height: 3rem;
-        }
-
-        #login:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-            cursor: pointer;
-        }
-
-        #signup {
-            width: 8rem;
-            border: 0.1rem solid #ccff00;
-            border-radius: 2rem;
-            background-color: #ccff00;
-            color: rgb(0, 0, 0);
-            height: 3rem;
-        }
-
-        #signup:hover {
-            background-color: rgba(204, 255, 0, 0.8);
-            cursor: pointer;
-        }
-
-        .material-symbols-outlined {
-            display: none;
-        }
-
-
-        @media screen and (max-width: 960px) {
-            #nav-options {
-                display: none;
-            }
-
-            #select {
-                display: none;
-            }
-
-            .material-symbols-outlined {
-                display: block;
-                font-size: 2rem;
-                cursor: pointer;
-            }
-
-            #login {
-                display: none;
-            }
-        }
-
-
-        @media screen and (max-width: 650px) {
-            #language {
-                display: none;
-            }
-
-            #signup {
-                height: 2rem;
-
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- nav bar -->
+
     <div class="nav-bar">
         <div id="logo"><a href="https://robinhood.com/us/en/"><img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a9UU-Wxq93VYGxJoDzXbBiDRWbL-rNhL5Q&s"></a>
@@ -193,6 +57,22 @@
         <span class="material-symbols-outlined">
             menu
         </span>
+    </div>
+
+    <!-- first page -->
+
+    <div class="fcontents">
+        <video autoplay muted loop id="fbg">
+            <source
+                src="https://videos.ctfassets.net/ilblxxee70tt/J0RCN0dYpaul2zFUXAMAE/0f52c0e82d21cf030ec73df6eb067d27/768x1024_v2.mp4"
+                type="video/webm">
+        </video>
+        <h4 id="fdate">October 14-27</h4>
+        <h1 id="fmainheading">A million reasons <br> to go Gold</h1>
+        <h4 id="fdetails">Your piece of $1,000,000 is waiting to claim. Only with Robinhood Gold <br> ($5/month).</h4>
+        <a href="https://robinhood.com/us/en/" id="tclink">Terms and subscriptions apply</a>
+        <br>
+        <button id="GoGold">Go Gold</button>
     </div>
 </body>
 
