@@ -20,7 +20,8 @@
         }
 
         .nav-bar {
-            background-color: black;
+            width: 100%;
+            background-color: rgba(0, 0, 0,1);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -28,6 +29,8 @@
             padding: 0%;
             border-bottom: 0.1rem solid white;
             height: 4rem;
+            position: fixed;
+            z-index: 1000;
         }
 
         #nav-options ul {
@@ -50,7 +53,7 @@
             font-size: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             width: 9rem;
-            background-color: black;
+            background-color: rgba(0, 0, 0,1);
             color: white;
             border: none;
         }
@@ -229,12 +232,12 @@
 
             #tclink {
                 padding-left: 2rem;
-                margin-left: 25%;
+                margin-left: 34%;
             }
 
             #GoGold {
                 margin-left: 2rem;
-                margin-left: 40%;
+                margin-left: 43%;
             }
         }
 
@@ -247,6 +250,7 @@
             background-size: cover;
             background-position: center;
         }
+
         #smainheading {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
@@ -261,10 +265,10 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
             padding-left: 45rem;
-            
+
         }
 
-        #Learn-more {
+        #sLearn-more {
             width: 8rem;
             border-radius: 2rem;
             background-color: #ccff00;
@@ -282,9 +286,10 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
             padding-left: 45rem;
-            padding-top: 10rem;
+            padding-top: 7rem;
         }
-        #sbg{
+
+        #sbg {
             display: none;
         }
 
@@ -294,32 +299,136 @@
                 background: none;
                 position: relative;
             }
-            #sbg{
+
+            #sbg {
                 display: block;
-                position:absolute;
+                position: absolute;
                 top: 50%;
                 width: 100%;
                 height: auto;
 
             }
+
             #smainheading {
                 font-size: 1.5rem;
                 padding-left: 2rem;
                 text-align: center;
                 padding-top: 2rem;
             }
+
             #sdetails {
-            font-size: 1rem;
-            padding-left: 2rem;
-            text-align: center;
+                font-size: 1rem;
+                padding-left: 2rem;
+                text-align: center;
             }
-            #Learn-more {
-                margin-left: 40%;
+
+            #sLearn-more {
+                margin-left: 43%;
             }
+
             #sdesclaimer {
                 font-size: 0.5rem;
                 padding-left: 2rem;
                 text-align: center;
                 padding-top: 5rem;
+            }
         }
-    }
+
+        /* third page */
+        
+        .tcontents {
+            height: 100vh;
+            background-image: url("https://images.ctfassets.net/ilblxxee70tt/2zqFBs1Dk1ZFLa68vgaCUM/ae93f6273da3b74ae09899a4cdcee75e/wide_crypto_hero_4k_test_2.jpg"); 
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #tmainheading {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            padding-left: 45rem;
+            padding-top: 9rem;
+        }
+        #tdetails {
+            color: black;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            padding-left: 45rem;
+
+        }
+        #trisk{
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            padding-left: 45rem;
+            padding-top: 10rem;
+        }
+        #tLearn-more {
+            width: 8rem;
+            border-radius: 2rem;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: normal;
+            margin-left: 45rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            
+        }
+        #tdesclaimer {
+            font-size: 0.7rem;
+            color: rgba(0, 0, 0, 0.6);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            padding-left: 45rem;
+            padding-top: 10rem;
+        }
+        #tbg {
+            display: none;
+        }
+
+        @media screen and (max-width: 650px) {
+            .tcontents {
+                background: url("https://images.ctfassets.net/ilblxxee70tt/7vB1E5FkoYiyUiDiLbBvRY/0304e170b4885b5a84042916c69bc792/mobile_crypto_hero_3.jpg");
+                background-size: cover;
+                background-position: center;
+                position: relative;
+
+            }
+            #tmainheading {
+                font-size: 1.5rem;
+                padding-left: 2rem;
+                text-align: center;
+                padding-top: 2rem;
+            }
+
+            #tdetails {
+                font-size: 1rem;
+                padding-left: 2rem;
+                text-align: center;
+            }
+            #trisk{
+                font-size: 0.5rem;
+                padding-left: 13rem;
+                text-align: center;
+                padding-top: 5rem;
+            }
+
+            #tLearn-more {
+                margin-left: 43%;
+            }
+
+            #tdesclaimer {
+                font-size: 0.5rem;
+                padding-left: 2rem;
+                text-align: center;
+                padding-top: 5rem;
+            }
+        }
