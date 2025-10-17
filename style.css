@@ -684,3 +684,62 @@
                 width: 20rem;
             }
         }
+
+        /* SEVENTH PAGE */
+
+        .sevcontents {
+            margin: 0%;
+            padding: 0%;
+            height: auto;
+            position: relative;
+        }
+        #sevbg {
+            width: auto;
+            height: auto;
+            position: absolute;
+            z-index: -1;
+        }
+        #sevmainheading {
+            font-family:'Times New Roman', Times, serif;
+            font-weight: normal;
+            color: rgb(255, 255, 255);
+            font-size: 5rem;
+            text-align: center;
+            padding-top: 10rem;
+        }
+        #sevoverlay{
+            background-color: rgba(0, 0, 0, 0.3);
+            padding-bottom: 2%;
+        }
+        #sevgetstarted {
+            width: 10rem;
+            border-radius: 2rem;
+            background-color: #ccff00;
+            color: rgb(0, 0, 0);
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: normal;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 650px) {
+            #sevmainheading {
+                font-size: 3rem;
+                padding-top: 5rem;
+                text-align: center;
+                position: relative;
+            }
+            #sevgetstarted {
+                width: 15rem;
+            }
+            #sevbg {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                z-index: -1;
+            }
+            
+        }
