@@ -139,7 +139,11 @@
         }
 
         /* first page */
-        
+        .fcontents {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
 
 
         #fdate {
@@ -185,37 +189,137 @@
 
         #fbg {
             position: absolute;
-            top:0%;
+            top: 0%;
             right: 0%;
-            height: 100%;
-            width: 50%;
+            width: 100%;
             object-fit: cover;
             z-index: -1;
 
         }
-        @media screen and (max-width: 650px){
-            #fbg{
-                width: 100%;
+
+        @media screen and (max-width: 650px) {
+            .fcontents {
+                height: 100vh;
+                position: relative;
+                overflow: hidden;
             }
-            #fmainheading{
+
+            #fbg {
+                position: absolute;
+                right: 20%;
+                top: 50%;
+
+            }
+
+            #fmainheading {
                 font-size: 3rem;
                 padding-left: 2rem;
                 text-align: center;
             }
-            #fdate{
+
+            #fdate {
                 padding-left: 2rem;
                 text-align: center;
             }
-            #fdetails{
+
+            #fdetails {
                 padding-left: 2rem;
                 text-align: center;
             }
-            #tclink{
+
+            #tclink {
                 padding-left: 2rem;
                 margin-left: 25%;
             }
-            #GoGold{
+
+            #GoGold {
                 margin-left: 2rem;
                 margin-left: 40%;
             }
         }
+
+        /* second page */
+
+
+        .scontents {
+            height: 100vh;
+            background-image: url("https://images.ctfassets.net/ilblxxee70tt/4AMLNM2FP37FHghha7757l/c29e98a9b5a31535a7333855183dca7b/wide_homepage_investing_4k_3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        #smainheading {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            color: white;
+            font-size: 2rem;
+            padding-left: 45rem;
+            padding-top: 9rem;
+        }
+
+        #sdetails {
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            padding-left: 45rem;
+            
+        }
+
+        #Learn-more {
+            width: 8rem;
+            border-radius: 2rem;
+            background-color: #ccff00;
+            color: rgb(0, 0, 0);
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: normal;
+            margin-left: 50rem;
+            margin-top: 1rem;
+        }
+
+        #sdesclaimer {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            padding-left: 45rem;
+            padding-top: 10rem;
+        }
+        #sbg{
+            display: none;
+        }
+
+
+        @media screen and (max-width: 650px) {
+            .scontents {
+                background: none;
+                position: relative;
+            }
+            #sbg{
+                display: block;
+                position:absolute;
+                top: 50%;
+                width: 100%;
+                height: auto;
+
+            }
+            #smainheading {
+                font-size: 1.5rem;
+                padding-left: 2rem;
+                text-align: center;
+                padding-top: 2rem;
+            }
+            #sdetails {
+            font-size: 1rem;
+            padding-left: 2rem;
+            text-align: center;
+            }
+            #Learn-more {
+                margin-left: 40%;
+            }
+            #sdesclaimer {
+                font-size: 0.5rem;
+                padding-left: 2rem;
+                text-align: center;
+                padding-top: 5rem;
+        }
+    }
