@@ -109,6 +109,9 @@
 
 
         @media screen and (max-width: 960px) {
+            .nav-bar {
+                width: 100%;
+            }
             #nav-options {
                 display: none;
             }
@@ -130,6 +133,9 @@
 
 
         @media screen and (max-width: 650px) {
+            .nav-bar {
+                width: 100%
+            }
             #language {
                 display: none;
             }
@@ -582,13 +588,13 @@
         .fiinner{
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 1rem;
+            font-weight: 500;
+            font-size: 1.3rem;
             padding-top: 6rem;
             display: grid;
-            grid-template-columns: repeat(2, 20rem);
+            grid-template-columns: repeat(2, 24rem);
             justify-content: center;
-            row-gap: 6rem;
+            row-gap: 10rem;
         }
 
         @media screen and (max-width: 650px) {
@@ -613,4 +619,68 @@
                 padding-top: 4rem;
             }
             
+        }
+
+        /* SIXTH PAGE */
+
+        .sixcontents {
+            margin: 0%;
+            padding: 0%;
+            height: auto;
+            background-color: #ccff00;
+        }
+        #sixmainheading {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            word-spacing: 1%;
+            color: rgb(0, 0, 0);
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 10rem;
+        }
+        #sixdetails {
+            font-size: 0.9rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        #sixsignup {
+            width: 20rem;
+            border-radius: 2rem;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: normal;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+        #sixboimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3rem;
+            width: 30rem;
+            height: auto;
+        }
+
+
+        @media screen and (max-width: 650px) {
+            #sixmainheading {
+                font-size: 2rem;
+                padding-top: 5rem;
+            }
+            #sixdetails {
+                font-size: 0.8rem;
+            }
+            #sixsignup {
+                width: 20rem;
+            }
+            #sixboimg {
+                width: 20rem;
+            }
         }
