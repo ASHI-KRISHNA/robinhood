@@ -5,6 +5,13 @@
             padding: 0%;
         }
 
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
         a {
             text-decoration: none;
             color: white;
@@ -792,6 +799,15 @@
             color: black;
         }
 
+        #atopbar {
+            padding-top: 1rem;
+        }
+
+        #atopbar a {
+            margin-top: 0.5em;
+            display: inline-block;
+        }
+
 
         /* ABOUT PAGE  MAIN CONTENT */
         .amaincontents {
@@ -892,6 +908,26 @@
         }
 
         @media screen and (max-width: 650px) {
+            #atopbar {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            #atopbar a,
+            #atopbar span {
+                display: inline-block;
+                margin: 2px 0;
+            }
+
+            #atopbar span#ttopbar {
+                margin-top: 5px;
+                font-weight: bold;
+            }
+
             .amaincontents {
                 display: grid;
                 grid-template-columns: 1fr;
