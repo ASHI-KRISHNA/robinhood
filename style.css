@@ -163,6 +163,7 @@
             height: 100vh;
             position: relative;
             overflow: hidden;
+            z-index: 2;
         }
 
 
@@ -216,7 +217,6 @@
             z-index: -1;
 
         }
-
         @media screen and (max-width: 650px) {
             .fcontents {
                 height: 100vh;
@@ -225,10 +225,10 @@
             }
 
             #fbg {
+                height: 100%;
+                width: 100%;
                 position: absolute;
-                right: 20%;
-                top: 50%;
-
+                top: 30%;
             }
 
             #fmainheading {
@@ -264,7 +264,7 @@
         .scontents {
             margin: 0%;
             padding: 0%;
-            height: 100vh;
+            height: auto;
             background-image: url("https://images.ctfassets.net/ilblxxee70tt/4AMLNM2FP37FHghha7757l/c29e98a9b5a31535a7333855183dca7b/wide_homepage_investing_4k_3.jpeg");
             background-size: cover;
             background-position: center;
@@ -466,7 +466,7 @@
         /* FOURTH PAGE */
 
         .focontents {
-            height: 100vh;
+            height: auto;
             margin: 0%;
             padding: 0%;
             background-image: url("https://images.ctfassets.net/ilblxxee70tt/54Guv4y5evT0ZpKTaC09c1/391b135f648b2582deff63a48ef63c10/RH25_Strategiespromo_wide_homepage_hero_4k.jpeg");
@@ -751,9 +751,10 @@
         @media screen and (max-width: 650px) {
             #sevmainheading {
                 font-size: 3rem;
-                padding-top: 5rem;
+                padding-top: 18rem;
                 text-align: center;
-                position: relative;
+
+                /* position: relative; */
             }
 
             #sevgetstarted {
@@ -763,8 +764,9 @@
             #sevbg {
                 width: 100%;
                 height: 100vh;
-                position: absolute;
-                z-index: -1;
+                object-fit: cover;
+                /* position: absolute;
+                z-index: -1; */
             }
 
         }
@@ -795,7 +797,7 @@
 
         #ttopbar {
             padding-top: 2rem;
-            margin-left: 20rem;
+            margin-left: 4rem;
             color: black;
         }
 
@@ -907,25 +909,22 @@
             font-size: 14rem;
         }
 
+        #astopbar {
+            display: none;
+        }
+
         @media screen and (max-width: 650px) {
             #atopbar {
+                display: none;
+            }
+
+            #astopbar {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-                padding: 10px;
-                font-size: 0.9rem;
+                gap: 1rem;
             }
 
-            #atopbar a,
-            #atopbar span {
-                display: inline-block;
-                margin: 2px 0;
-            }
-
-            #atopbar span#ttopbar {
-                margin-top: 5px;
-                font-weight: bold;
+            #lstopbar {
+                color: #000000;
             }
 
             .amaincontents {
