@@ -210,12 +210,12 @@
 
         #fbg {
             position: absolute;
-            top: 0%;
-            right: 0%;
-            width: 100%;
+            top: 3rem;
+            right: -30rem;
+            width: 150%;
+            height: 150%;
             object-fit: cover;
             z-index: -1;
-
         }
         @media screen and (max-width: 650px) {
             .fcontents {
@@ -264,7 +264,7 @@
         .scontents {
             margin: 0%;
             padding: 0%;
-            height: auto;
+            height: 100vh;
             background-image: url("https://images.ctfassets.net/ilblxxee70tt/4AMLNM2FP37FHghha7757l/c29e98a9b5a31535a7333855183dca7b/wide_homepage_investing_4k_3.jpeg");
             background-size: cover;
             background-position: center;
@@ -275,15 +275,16 @@
             font-weight: normal;
             color: white;
             font-size: 2rem;
-            padding-left: 45rem;
             padding-top: 9rem;
+            margin-left: 45rem;
         }
 
         #sdetails {
             font-size: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
-            padding-left: 45rem;
+            /* padding-left: 45rem; */
+            margin-left: 45rem;
 
         }
 
@@ -304,8 +305,10 @@
             color: rgba(255, 255, 255, 0.6);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
-            padding-left: 45rem;
-            padding-top: 7rem;
+            /* padding-left: 45rem;
+            padding-top: 7rem; */
+            margin-left: 45rem;
+            margin-top: 8rem;
         }
 
         #sbg {
