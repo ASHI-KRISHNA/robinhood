@@ -217,6 +217,7 @@
             object-fit: cover;
             z-index: -1;
         }
+
         @media screen and (max-width: 650px) {
             .fcontents {
                 height: 100vh;
@@ -262,12 +263,19 @@
 
 
         .scontents {
-            margin: 0%;
-            padding: 0%;
             height: 100vh;
-            background-image: url("https://images.ctfassets.net/ilblxxee70tt/4AMLNM2FP37FHghha7757l/c29e98a9b5a31535a7333855183dca7b/wide_homepage_investing_4k_3.jpeg");
+            width: 100%;
+            background: url("https://images.ctfassets.net/ilblxxee70tt/4AMLNM2FP37FHghha7757l/c29e98a9b5a31535a7333855183dca7b/wide_homepage_investing_4k_3.jpeg") center/cover no-repeat;
             background-size: cover;
-            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            text-align: left;
+        }
+
+        #scontents_text {
+            padding-left: 10%;
         }
 
         #smainheading {
@@ -275,17 +283,13 @@
             font-weight: normal;
             color: white;
             font-size: 2rem;
-            padding-top: 9rem;
-            margin-left: 45rem;
+
         }
 
         #sdetails {
             font-size: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
-            /* padding-left: 45rem; */
-            margin-left: 45rem;
-
         }
 
         #sLearn-more {
@@ -296,8 +300,6 @@
             height: 3rem;
             font-size: 1rem;
             font-weight: normal;
-            margin-left: 50rem;
-            margin-top: 1rem;
         }
 
         #sdisclaimer {
@@ -305,10 +307,6 @@
             color: rgba(255, 255, 255, 0.6);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
-            /* padding-left: 45rem;
-            padding-top: 7rem; */
-            margin-left: 45rem;
-            margin-top: 8rem;
         }
 
         #sbg {
