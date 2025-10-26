@@ -225,6 +225,7 @@
         @media screen and (max-width: 650px) {
             .fcontents {
                 height: 100vh;
+                width: 100%;
                 position: relative;
                 overflow: hidden;
             }
@@ -244,17 +245,17 @@
 
             #fmainheading {
                 font-size: 3rem;
-                padding-left: 2rem;
+                padding-left: 1rem;
                 text-align: center;
             }
 
             #fdate {
-                padding-left: 2rem;
+                padding-left: 1rem;
                 text-align: center;
             }
 
             #fdetails {
-                padding-left: 2rem;
+                padding-left: 1rem;
                 text-align: center;
             }
 
@@ -263,7 +264,7 @@
             }
 
             #GoGold {
-                margin-left: 40%;
+                margin-left: 35%;
             }
         }
 
@@ -324,6 +325,7 @@
 
         @media screen and (max-width: 650px) {
             .scontents {
+                width: 100%;
                 background: none;
                 position: relative;
             }
@@ -331,7 +333,7 @@
             #sbg {
                 display: block;
                 position: absolute;
-                top: 70%;
+                top: 80%;
                 left: 0;
                 width: 100%;
                 height: auto;
@@ -340,24 +342,24 @@
 
             #smainheading {
                 font-size: 1.5rem;
-                padding-left: 2rem;
                 text-align: center;
-                padding-top: 2rem;
+                /* margin-left: 0%;
+                padding-left: 1rem;
+                text-align: center;
+                padding-top: 2rem; */
             }
 
             #sdetails {
-                font-size: 1rem;
-                padding-left: 2rem;
+                font-size: 1rem;                
                 text-align: center;
             }
 
             #sLearn-more {
-                margin-left: 37%;
+                margin-left: 30%;
             }
 
             #sdisclaimer {
                 font-size: 0.5rem;
-                padding-left: 2rem;
                 text-align: center;
                 padding-top: 5rem;
             }
@@ -456,20 +458,20 @@
 
             #trisk {
                 font-size: 0.5rem;
-                padding-left: 13rem;
-                text-align: center;
+                padding-left: 11rem;
                 padding-top: 5rem;
             }
 
             #tLearn-more {
-                margin-left: 43%;
+                margin-left: 36%;
             }
 
             #tdisclaimer {
+                position: absolute;
                 font-size: 0.5rem;
-                padding-left: 2rem;
+                margin-top: 98%;
+                padding-left: 8rem;
                 text-align: center;
-                padding-top: 5rem;
             }
         }
 
